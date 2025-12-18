@@ -1,3 +1,17 @@
+# 🏢 EBM – Easy Building Manager  
+**Architecture & Platform Overview**
+
+EBM (Easy Building Manager) is a **production SaaS platform** for managing residential buildings and maintenance companies.  
+The system includes **Web, Android, and iOS applications** backed by a centralized REST API.
+
+This repository provides a **technical overview and architecture documentation** of the platform.  
+The full source code is split across multiple private repositories due to commercial usage.
+
+---
+
+## 🌐 System Architecture
+
+```mermaid
 flowchart TB
   %% Clients
   subgraph Clients["Clients"]
@@ -11,15 +25,15 @@ flowchart TB
     API["EBM Server\nNode.js + Express (REST)"]
     AUTH["Auth & RBAC\nJWT + Roles/Permissions"]
     JOBS["Schedulers / Background Jobs\n(Recurring tasks, reminders, expiries)"]
-    NOTIF["Notifications Service\n(push + in-app)"]
+    NOTIF["Notifications Service\n(Push + In-app)"]
     FILES["File Handling\nUploads & Document lifecycle"]
-    PAY["Payments Integration\n(If enabled)"]
+    PAY["Payments Integration\n(Optional)"]
   end
 
   %% Data
   subgraph Data["Data Layer"]
     DB["MongoDB\n(Mongoose Schemas)"]
-    STORAGE["Object Storage\n(Files/Images)"]
+    STORAGE["Object Storage\n(Files / Images)"]
   end
 
   %% Connections
@@ -38,11 +52,3 @@ flowchart TB
 
   API --> PAY
   PAY --> DB
-
-
-  ### Architecture Notes
-- Multi-client platform: separate apps for tenants (User) and operations (Manager), sharing the same backend.
-- Central REST API with MVC structure and role-based access control (RBAC).
-- Background jobs handle recurring tasks, reminders, and document-expiry alerts.
-- Files (documents/images) are stored in object storage, referenced from MongoDB.
-
