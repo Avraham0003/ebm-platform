@@ -52,6 +52,7 @@ flowchart TB
 
   API --> PAY
   PAY --> DB
+  ```
 
 
 ## 🧠 Architecture Notes
@@ -66,7 +67,7 @@ Background Jobs – Handle recurring tasks, reminders, and document-expiry notif
 
 File Management – Documents and images are stored in object storage and referenced from MongoDB.
 
-🗂 Repository Purpose
+## 🗂 Repository Purpose
 
 This repository acts as an architecture and product showcase.
 
@@ -80,7 +81,7 @@ EBM Server – Backend API and core business logic
 
 EBM Site – Marketing & landing page
 
-🛠 Tech Stack Overview
+## 🛠 Tech Stack Overview
 Frontend
 
 React
@@ -129,7 +130,7 @@ Git version control
 
 (Add screenshots of the dashboard, mobile app, calendar, and tasks here)
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Avraham Baranes
 Full Stack Developer
@@ -139,7 +140,7 @@ GitHub: https://github.com/Avraham0003
 
 LinkedIn: https://linkedin.com/in/avraham-baranes-892b11245
 
-📌 Notes
+## 📌 Notes
 
 Some implementation details are omitted to protect proprietary business logic.
 This repository focuses on architecture, patterns, and system design decisions rather than full source code.
