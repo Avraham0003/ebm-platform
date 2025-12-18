@@ -38,3 +38,11 @@ flowchart TB
 
   API --> PAY
   PAY --> DB
+
+
+  ### Architecture Notes
+- Multi-client platform: separate apps for tenants (User) and operations (Manager), sharing the same backend.
+- Central REST API with MVC structure and role-based access control (RBAC).
+- Background jobs handle recurring tasks, reminders, and document-expiry alerts.
+- Files (documents/images) are stored in object storage, referenced from MongoDB.
+
