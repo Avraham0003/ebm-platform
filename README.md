@@ -73,16 +73,16 @@ File Management – Documents and images are stored in object storage and refere
 This repository includes detailed technical documentation for key system areas:
 
 - 🏗️ **System Architecture**  
-  `docs/architecture.md`
+- [System Architecture](docs/architecture.md)
 
 - 🔐 **Authentication & RBAC**  
-  `docs/auth-rbac.md`
+- [Authentication & RBAC](docs/auth-rbac.md)
 
 - 🗂️ **Data Model (Domain Entities)**  
-  `docs/data-model.md`
+- [Data Model](docs/data-model.md)
 
 - ⏱️ **Background Jobs & Scheduling**  
-  `docs/background-jobs.md`
+- [Background Jobs & Scheduling](docs/background-jobs.md)
 
 ## 🗂 Repository Purpose
 
