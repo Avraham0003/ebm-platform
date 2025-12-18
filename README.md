@@ -52,3 +52,94 @@ flowchart TB
 
   API --> PAY
   PAY --> DB
+
+
+## 🧠 Architecture Notes
+
+Multi-client platform – Separate applications for tenants (User) and maintenance managers (Manager), all powered by a shared backend.
+
+Central REST API – Built with Node.js and Express using MVC architecture.
+
+Role-Based Access Control (RBAC) – Secure access using JWT authentication and role permissions.
+
+Background Jobs – Handle recurring tasks, reminders, and document-expiry notifications.
+
+File Management – Documents and images are stored in object storage and referenced from MongoDB.
+
+🗂 Repository Purpose
+
+This repository acts as an architecture and product showcase.
+
+The actual system is implemented across multiple private repositories:
+
+EBM User – Tenant-facing Web & Mobile application
+
+EBM Manager – Maintenance management dashboard (Web & Mobile)
+
+EBM Server – Backend API and core business logic
+
+EBM Site – Marketing & landing page
+
+🛠 Tech Stack Overview
+Frontend
+
+React
+
+JavaScript (ES6+)
+
+HTML5 / CSS3
+
+Mobile
+
+Capacitor (Android & iOS)
+
+Backend
+
+Node.js
+
+Express
+
+RESTful APIs
+
+Database
+
+MongoDB
+
+Mongoose
+
+Security & Architecture
+
+JWT Authentication
+
+Role-Based Access Control (RBAC)
+
+MVC Architecture
+
+Other
+
+Background jobs & schedulers
+
+File uploads & document lifecycle
+
+Notifications system
+
+Git version control
+
+📸 Screenshots
+
+(Add screenshots of the dashboard, mobile app, calendar, and tasks here)
+
+👨‍💻 Author
+
+Avraham Baranes
+Full Stack Developer
+Ashkelon, Israel
+
+GitHub: https://github.com/Avraham0003
+
+LinkedIn: https://linkedin.com/in/avraham-baranes-892b11245
+
+📌 Notes
+
+Some implementation details are omitted to protect proprietary business logic.
+This repository focuses on architecture, patterns, and system design decisions rather than full source code.
