@@ -67,6 +67,23 @@ Background Jobs – Handle recurring tasks, reminders, and document-expiry notif
 
 File Management – Documents and images are stored in object storage and referenced from MongoDB.
 
+
+## 📚 Technical Documentation
+
+This repository includes detailed technical documentation for key system areas:
+
+- 🏗️ **System Architecture**  
+  `docs/architecture.md`
+
+- 🔐 **Authentication & RBAC**  
+  `docs/auth-rbac.md`
+
+- 🗂️ **Data Model (Domain Entities)**  
+  `docs/data-model.md`
+
+- ⏱️ **Background Jobs & Scheduling**  
+  `docs/background-jobs.md`
+
 ## 🗂 Repository Purpose
 
 This repository acts as an architecture and product showcase.
