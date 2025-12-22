@@ -15,25 +15,25 @@ The full source code is split across multiple private repositories due to commer
 flowchart TB
   %% Clients
   subgraph Clients["Clients"]
-    U["EBM User App\n(Web + Android/iOS via Capacitor)"]
-    M["EBM Manager App\n(Web + Android/iOS via Capacitor)"]
-    S["EBM Site\n(Landing Page)"]
+    U["EBM User App (Web + Android/iOS via Capacitor)"]
+    M["EBM Manager App (Web + Android/iOS via Capacitor)"]
+    S["EBM Site (Landing Page)"]
   end
 
   %% Backend
   subgraph Backend["Backend"]
-    API["EBM Server\nNode.js + Express (REST)"]
-    AUTH["Auth & RBAC\nJWT + Roles/Permissions"]
-    JOBS["Schedulers / Background Jobs\n(Recurring tasks, reminders, expiries)"]
-    NOTIF["Notifications Service\n(Push + In-app)"]
-    FILES["File Handling\nUploads & Document lifecycle"]
-    PAY["Payments Integration\n(Optional)"]
+    API["EBM Server | Node.js + Express (REST)"]
+    AUTH["Auth & RBAC | JWT + Roles/Permissions"]
+    JOBS["Schedulers / Background Jobs | (Recurring tasks, reminders, expiries)"]
+    NOTIF["Notifications Service | (Push + In-app)"]
+    FILES["File Handling | Uploads & Document lifecycle"]
+    PAY["Payments Integration(Optional)"]
   end
 
   %% Data
   subgraph Data["Data Layer"]
-    DB["MongoDB\n(Mongoose Schemas)"]
-    STORAGE["Object Storage\n(Files / Images)"]
+    DB["MongoDB (Mongoose Schemas)"]
+    STORAGE["Object Storage (Files / Images)"]
   end
 
   %% Connections
