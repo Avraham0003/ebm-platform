@@ -143,9 +143,26 @@ Notifications system
 
 Git version control
 
-📸 Screenshots
+## 📸 Screenshots
 
-(Add screenshots of the dashboard, mobile app, calendar, and tasks here)
+### Manager Dashboard
+![Manager Dashboard](assets/screenshots/dashboard-manager.png)
+
+### Task Management
+![Task Management](assets/screenshots/tasks-management.png)
+
+### Task Details
+![Task Details](assets/screenshots/task-details.png)
+
+### Calendar & Scheduling
+![Calendar](assets/screenshots/calendar-view.png)
+
+### Mobile App (Tenant)
+![Mobile App](assets/screenshots/mobile-user-app.png)
+
+### Documents & Notices
+![Documents](assets/screenshots/documents-notices.png)
+
 
 ## 👨‍💻 Author
 
