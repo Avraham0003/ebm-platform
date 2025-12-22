@@ -151,9 +151,6 @@ Git version control
 ### Task Management
 ![Task Management](assets/screenshots/tasks-management.png)
 
-### Task Details
-![Task Details](assets/screenshots/task-details.png)
-
 ### Calendar & Scheduling
 ![Calendar](assets/screenshots/calendar-view.png)
 
